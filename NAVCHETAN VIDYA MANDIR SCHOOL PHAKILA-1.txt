@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navchetan Vidya Mandir School Phakila</title>
+    <meta name="description" content="Navchetan Vidya Mandir School Phakila - Premium CBSE education focused on community and excellence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>NVM</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#campus">Campus</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn-primary" onclick="location.href='#admissions'">Apply Now</button>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('assets/hero_bg.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="Navchetan Vidya Mandir">Navchetan Vidya Mandir</h1>
+            <h2 class="sub-heading">School Phakila</h2>
+            <p>Empowering minds, illuminating the future through holistic education and innovation.</p>
+            <div class="hero-buttons">
+                <a href="#admissions" class="btn-primary btn-glow">Admission Open</a>
+                <a href="#campus" class="btn-secondary btn-glass">Explore Campus</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass-card fade-in">
+                    <div class="card-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                    <h3>Legacy of Excellence</h3>
+                    <p>Established with a vision to bring premium CBSE education to Phakila, we have grown into a community-driven institution that shapes the leaders of tomorrow. We believe in nurturing raw potential into refined brilliance.</p>
+                </div>
+                <div class="about-card glass-card fade-in delay-1">
+                    <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>Holistic Growth</h3>
+                    <p>Education is not just about textbooks. Our modern pedagogy focuses on character building, extracurricular talents, sports, and emotional intelligence to prepare students for real-world challenges.</p>
+                </div>
+                <div class="about-card glass-card fade-in delay-2">
+                    <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Future-Ready</h3>
+                    <p>With smart classrooms, advanced robotics labs, and digital libraries, we equip our students with 21st-century skills, ensuring they stay ahead in an ever-evolving global landscape.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Campus View Section -->
+    <section id="campus" class="campus section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Interactive Campus Map</h2>
+                <div class="line"></div>
+                <p>Explore our state-of-the-art facilities</p>
+            </div>
+            <div class="campus-container fade-in">
+                <img src="assets/campus_map.png" alt="3D Campus Map" class="campus-image">
+                <!-- Interactive Pins -->
+                <div class="pin" style="top: 30%; left: 40%;" data-title="Classrooms" data-desc="Smart AC classrooms with interactive panels.">
+                    <div class="pulse"></div>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <div class="pin" style="top: 50%; left: 70%;" data-title="Science Labs" data-desc="Fully equipped Physics, Chemistry & Bio labs.">
+                    <div class="pulse"></div>
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+                <div class="pin" style="top: 70%; left: 30%;" data-title="Playground" data-desc="Expansive ground for football, cricket & athletics.">
+                    <div class="pulse"></div>
+                    <i class="fa-solid fa-futbol"></i>
+                </div>
+                <div class="pin" style="top: 20%; left: 60%;" data-title="Library" data-desc="A digital and physical repository of knowledge.">
+                    <div class="pulse"></div>
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                
+                <!-- Tooltip -->
+                <div class="map-tooltip glass-card">
+                    <h4 id="tooltip-title">Building</h4>
+                    <p id="tooltip-desc">Description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities section-padding">
+        <div class="container">
+            <div class="section-header text-white">
+                <h2>Premium Facilities</h2>
+                <div class="line line-gold"></div>
+            </div>
+            <div class="facilities-grid">
+                <div class="facility-card neumo-card fade-in">
+                    <div class="icon-wrapper"><i class="fa-solid fa-desktop"></i></div>
+                    <h3>Smart Classes</h3>
+                    <p>Interactive digital boards in every classroom for immersive learning.</p>
+                </div>
+                <div class="facility-card neumo-card fade-in delay-1">
+                    <div class="icon-wrapper"><i class="fa-solid fa-vial"></i></div>
+                    <h3>Advanced Labs</h3>
+                    <p>Modern equipment for practical, hands-on scientific experiments.</p>
+                </div>
+                <div class="facility-card neumo-card fade-in delay-2">
+                    <div class="icon-wrapper"><i class="fa-solid fa-swimmer"></i></div>
+                    <h3>Sports Complex</h3>
+                    <p>Indoor and outdoor facilities including a swimming pool and courts.</p>
+                </div>
+                <div class="facility-card neumo-card fade-in delay-3">
+                    <div class="icon-wrapper"><i class="fa-solid fa-bus"></i></div>
+                    <h3>Transport</h3>
+                    <p>GPS-enabled safe and secure transport fleet across the city.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Campus Life</h2>
+                <div class="line"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="assets/gallery_lab.png" alt="Science Lab">
+                    <div class="gallery-overlay">
+                        <span>Science Labs</span>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-1">
+                    <img src="assets/gallery_library.png" alt="Library">
+                    <div class="gallery-overlay">
+                        <span>Digital Library</span>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-2">
+                    <img src="assets/campus_map.png" alt="Campus">
+                    <div class="gallery-overlay">
+                        <span>Campus Aerial View</span>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+                 <div class="gallery-item fade-in delay-3">
+                    <img src="assets/hero_bg.png" alt="Campus Overview">
+                    <div class="gallery-overlay">
+                        <span>Campus Overview</span>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="lightbox-caption"></div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="admissions section-padding bg-light">
+        <div class="container">
+            <div class="admission-wrapper">
+                <div class="admission-info fade-in">
+                    <h2>Admissions Open for 2026-27</h2>
+                    <p>Join the Navchetan Vidya Mandir family. Experience world-class education designed to unlock your child's true potential.</p>
+                    
+                    <div class="info-blocks">
+                        <div class="info-block">
+                            <i class="fa-solid fa-child-reaching"></i>
+                            <div>
+                                <h4>Pre-Primary to Class XII</h4>
+                                <p>Comprehensive CBSE curriculum.</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                            <div>
+                                <h4>Transparent Fee Structure</h4>
+                                <p>No hidden charges, flexible payment plans.</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <i class="fa-solid fa-award"></i>
+                            <div>
+                                <h4>Merit Scholarships</h4>
+                                <p>Up to 100% scholarship for academic excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="admission-form-container glass-card fade-in delay-1">
+                    <h3>Enquire Now</h3>
+                    <form class="admission-form" id="admissionForm">
+                        <div class="form-group">
+                            <input type="text" id="parentName" required>
+                            <label for="parentName">Parent's Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="studentName" required>
+                            <label for="studentName">Student's Name</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <input type="tel" id="phone" required>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="form-group half">
+                                <select id="grade" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="pre">Pre-Primary</option>
+                                    <option value="primary">Primary (I - V)</option>
+                                    <option value="middle">Middle (VI - VIII)</option>
+                                    <option value="secondary">Secondary (IX - X)</option>
+                                    <option value="senior">Senior Secondary (XI - XII)</option>
+                                </select>
+                                <label for="grade" class="select-label">Select Class</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <button type="submit" class="btn-primary w-100">Submit Enquiry <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-details fade-in">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Navchetan Vidya Mandir School<br>Phakila, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 98765 43210<br>+91 87654 32109</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@nvmphakila.edu.in<br>admissions@nvmphakila.edu.in</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="map-container glass-card fade-in delay-1">
+                    <!-- Google Maps Styled UI -->
+                    <div class="fake-map">
+                        <img src="assets/campus_map.png" alt="Map View" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+                        <div class="map-overlay">
+                            <div class="map-pin drop-animation">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div class="pulse-ring"></div>
+                            </div>
+                            <div class="map-card">
+                                <h5>Navchetan Vidya Mandir</h5>
+                                <p>Phakila</p>
+                                <a href="#" class="btn-text">View on Google Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Navchetan Vidya Mandir School Phakila. All Rights Reserved. Designed with <i class="fa-solid fa-heart" style="color: #ff3366;"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
